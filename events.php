@@ -8,10 +8,12 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css">
+<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css">
+<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css">
 <link rel="icon" href="images/favicon.ico">
 
 
-<title>Visit Bellingham</title>
+<title>Events</title>
 </head>
 <div id="wrapper">
 <body>
@@ -42,25 +44,68 @@
 
     <section>
         <div class="container">
-            <div class="banner"></div>
+            <div class="event"></div>
         </div>
     </section>
     <div class="clearfix"></div>
 <main>
     <div class="container">  
-            <div class="main">
-                <div class="left">
-                    <h1 class="title">Explore the Great Pacific Northwest</h1>
-                    <p class="hometxt">Bellingham, Washington is located in Northwestern Washington, about 30 minutes from the Canadian border. The views, people, and food are some of the best you will find in Washington, perhaps the world. Explore our dozens of hiking, biking, and walking trails trails, or take a walk on the waterfront at one of our numerous waterfront parks. Relax on the beach or have a night out downtown, just remember to grab a bite to eat at any of our numerous local hot-spot restaurants. Let this website be your guide to experience the beautiful city of Bellingham!</p>
-                </div>
+        <div class="testimonial-carousel owl-carousel owl-theme p-5">
+            <div class="testimonial">
+                    <div class="description">
+                        <h2>Downtown Sounds</h2>
+                        <hr>
+                        <p>A 15 year tradition of bands gathering from all over to perform in downtown Bellingham during the summer. This local music festival will be the highlight of the summer for some, food, drinks, and great music!</p>
+                    </div>
+            </div>
 
-                <div class="right">
-                    <h2 class="subhead">Weekly Spotlight</h2>
-                    <p class="hometxt">
-                        <img class="boomer" src="images/DSCN2170.jpg" alt=""><br> This weeks spotlight is the treasured Boomer's Drive In. Boomer's Drive In has been voted the best burger in town many times and provides a fun old-school theme. The unique burgers are good as any, plus the milkshakes and malts are unbeatable. <a href="spotlight.html">Read More...</a></p>
+            <div class="testimonial">
+                <div class="description">
+                    <h2>Downtown Art Walk</h2>
+                    <hr>
+                    <p>Walk around downtown Bellingham and see art from different galleries and museums and dozens of artists. It takes place on the first Friday of every month. Art, food, drinks, doesn't get better than that.</p>
                 </div>
             </div>
+
+            <div class="testimonial">
+                <div class="description">
+                    <h2>Bellingham Bay Marathon</h2>
+                    <hr>
+                    <p>The Bellingham Bay walk occurs every year in September, starting in downtown Bellingham and offering a 5k, 10k, half marathon and full marathon as well as a team full marathon relay.</p>
+                </div>
             </div>
+
+            <div class="testimonial">
+                <div class="description">
+                    <h2>Whatcom County Farm Tour</h2>
+                    <hr>
+                    <p>The 14th annual Whatcom county Farm tour in November will have you eating, drinking, and enjoying 12 of Whatcom County's family farm lands all over the county. </p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="description">
+                    <h2>WWU Tours</h2>
+                    <hr>
+                    <p>It is no secret that WWU is one of the prettiest campus's in the country, so do yourself a favor, schedule a tour, and take in the beauty of the campus.</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="description">
+                    <h2>Farmer's Market</h2>
+                    <hr>
+                    <p>Bellingham's farmer's market is hard to beat. With dozens of vendors for art and food and more, you'll want to get downtown and check it out. Suspended currently due to covid.</p>
+                </div>
+            </div>
+
+
+            
+
+        </div>
+    </div>
+
+    
         
     <div class="clearfix"></div>
 
@@ -102,7 +147,25 @@
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.js "> </script>
 <script src="https://unpkg.com/scrollreveal"></script>
-
+<script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
+    <script>
+        $('document').ready(function(){
+            // $('.owl-carousel').owlCarousel();
+            $('.owl-carousel').owlCarousel({
+                margin:20,
+                loop: true,
+                autoplay: true,
+                dotsEach: true,
+                responsive:{
+                    0: {items:1},
+                    600: {items:2},
+                    1000: {items: 3}
+                }
+            });
+        });
+    </script>
+<script src="js/loader.js"></script> 
 <script>
     //scroll reveal
 $('document').ready(function(){
